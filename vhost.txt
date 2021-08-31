@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+        ServerName local.maryam.com
+        DocumentRoot /home/rihan/Downloads/maryam
+        <Directory "/home/rihan/Downloads/maryam">
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride All
+                Order allow,deny
+                allow from all
+                Require all granted
+        </Directory>
+ErrorLog /var/log/local.maryam_error_log
+CustomLog  /var/log/local.maryam_access_log combined
+</VirtualHost>
+
