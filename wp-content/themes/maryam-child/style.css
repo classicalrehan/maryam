@@ -1,0 +1,33 @@
+/*
+ Theme Name:   maryam-child
+ Theme URI:    https://www.wondermirza.com
+ Description:  Wonder Mirca theme have the feature to customize each and every component. We have added lots of naukri component inside it, which we can easly plug n play anywhere inside the page. These component are ready made just need to drop n drop in the page. There are lots of component are available i.e. QSB, Job Listing, Job description, Submit Profile, Drop CV etc
+ Author:       Mohd Rihan Ansari
+ Author URI:   https://www.wondermirza.com
+ Template:     maryam
+ Version:      4.2.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         maryam mirza, wonder, mirza
+ Theme Name:   maryam-child
+*/
+@media only screen and (min-width: 1025px){
+   .html_header_sidebar #top  #header {
+        background-color: #222;
+        width: 86px !important;        
+        right: auto;
+        top: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+.html_header_left #main {
+    margin-left: 86px !important;
+    position: relative;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+.responsive .container {
+    padding-left:0px;
+}
+#top #main .sidebar_left .sidebar{background:#444444;}
