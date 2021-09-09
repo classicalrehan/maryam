@@ -1,0 +1,37 @@
+<section data-id="about-me" class="animated-section">
+    <div class="page-title">
+        <h2>About <span>Me</span></h2>
+    </div>
+
+    <div class="section-content">
+        <!-- Personal Information -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-7">
+                <?php echo get_field('about_us', 'option'); ?>                
+            </div>
+
+            <div class="col-xs-12 col-sm-5">
+                <div class="info-list">
+                    <ul>
+                        <?php
+                        $aboutUsMoreInfo = get_field('more_info', 'option');
+                        foreach ($aboutUsMoreInfo as $info) {
+                            ?>
+                            <li>
+                                <span class="title"><?php echo $info['label']; ?></span>
+                                <span class="value"><?php echo $info['value']; ?></span>
+                            </li>
+                            <?php
+                        }
+                        ?>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <?php
+        $testimonials = WPPostController::getInstance()->get("testimonials");
+        echo TestimonialController::getInstance()->get($testimonials);
+        ?>
+    </div>
+</section>
+<!-- End of Personal Information -->

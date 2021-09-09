@@ -1,0 +1,35 @@
+<?php
+//Get the active tab from the $_GET param
+$default_tab = null;
+$tab = isset($_GET['tab']) ? $_GET['tab'] : $default_tab;
+?>
+<div class="wrap">
+    <!-- Print the page title -->
+    <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+    <!-- Here are our tabs -->
+    <nav class="nav-tab-wrapper">
+        <a href="?page=<?php echo $this->settings['slug']; ?>" class="nav-tab <?php if ($tab === null): ?>nav-tab-active<?php endif; ?>">Theme Options</a>
+        <a href="?page=<?php echo $this->settings['slug']; ?>&tab=settings" class="nav-tab <?php if ($tab === 'settings'): ?>nav-tab-active<?php endif; ?>">Settings</a>
+        <a href="?page=<?php echo $this->settings['slug']; ?>&tab=tools" class="nav-tab <?php if ($tab === 'tools'): ?>nav-tab-active<?php endif; ?>">Color Styling</a>
+        <a href="?page=<?php echo $this->settings['slug']; ?>&tab=tools" class="nav-tab <?php if ($tab === 'tools'): ?>nav-tab-active<?php endif; ?>">Header</a>
+        <a href="?page=<?php echo $this->settings['slug']; ?>&tab=tools" class="nav-tab <?php if ($tab === 'tools'): ?>nav-tab-active<?php endif; ?>">Footer</a>
+        <a href="?page=<?php echo $this->settings['slug']; ?>&tab=tools" class="nav-tab <?php if ($tab === 'tools'): ?>nav-tab-active<?php endif; ?>">Social Profiles</a>
+        <a href="?page=<?php echo $this->settings['slug']; ?>&tab=tools" class="nav-tab <?php if ($tab === 'tools'): ?>nav-tab-active<?php endif; ?>">Google Services</a>
+    </nav>
+
+    <div class="tab-content">
+        <?php
+        switch ($tab) :
+            case 'settings':
+                echo 'Settings'; //Put your HTML here
+                break;
+            case 'tools':
+                echo 'Tools';
+                break;
+            default:
+                echo 'Default tab';
+                break;
+        endswitch;
+        ?>
+    </div>
+</div>

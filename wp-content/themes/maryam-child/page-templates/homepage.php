@@ -1,21 +1,10 @@
-<?php
-/*
-  Template Name: Homepage
- */
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-get_header();
-?>
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <title>Maryam Mirza | Explorer | Educator | Motivational Speaker</title>
+        <title>Maryam Mirza | Explorer | Educator | Motivational Speaker ....</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="description" content="Maryam Mirza" />
         <meta name="keywords" content="Maryam Mirza, Explorer, Educator, Motivational Speaker" />

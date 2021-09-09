@@ -17,13 +17,13 @@
  *
  * @package WordPress
  */
-
+include_once(__DIR__.'/vendor/autoload.php');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'maryam' );
 
 /** MySQL database username */
-define( 'DB_USER', 'rihan' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
 define( 'DB_PASSWORD', 'P@ssw0rd' );
@@ -36,6 +36,11 @@ define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+define('WP_MEMORY_LIMIT', '512M');
+define('WP_MAX_MEMORY_LIMIT', '512M');
+
+
+
 
 /**#@+
  * Authentication unique keys and salts.
@@ -94,3 +99,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+define ( 'FS_METHOD', 'direct');

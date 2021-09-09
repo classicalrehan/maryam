@@ -30,22 +30,5 @@ function maryam_enqueue_styles() {
     wp_enqueue_script('owl.carousel.min-script', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ),true,true);
     wp_enqueue_script('jquery.magnific-popup.min-script', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.min.js', array( 'jquery' ),true,true);
     wp_enqueue_script('validator-script', get_stylesheet_directory_uri() . '/js/validator.js', array( 'jquery' ),true,true);
-    wp_enqueue_script('main-script', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ),true,true);
-    
-    
-    
-    /*<script src="js/modernizr.custom.js"></script>
-        <script src="js/animating.js"></script>
-
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
-
-        <script src='js/perfect-scrollbar.min.js'></script>
-        <script src='js/jquery.shuffle.min.js'></script>
-        <script src='js/masonry.pkgd.min.js'></script>
-        <script src='js/owl.carousel.min.js'></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-
-        <script src="js/validator.js"></script>
-        <script src="js/main.js"></script>*/
+    wp_enqueue_script('main-script', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ),true,true);   
 }

@@ -1,0 +1,42 @@
+<div class="white-space-30"></div>
+
+<!-- Testimonials -->
+<div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <div class="block-title">
+            <h3>Testimonials</h3>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <div class="testimonials owl-carousel">
+            <?php
+            foreach ($this->data as $testimonial) {
+                $compan = get_field('company', $testimonial->ID);
+                ?>
+                <div class="testimonial">
+                    <div class="img">
+                        <img src="<?php echo get_field('picture', $testimonial->ID); ?>" alt="<?php echo $testimonial->post_title; ?>">
+                    </div>
+                    <div class="text">
+                        <p><?php echo $testimonial->post_content; ?></p>
+                    </div>
+
+                    <div class="author-info">
+                        <h4 class="author"><?php echo $testimonial->post_title; ?></h4>
+                        <h5 class="company"><?php echo get_field('company', $testimonial->ID); ?></h5>
+                        <div class="icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>                    
+        </div>
+    </div>
+</div>
+<!-- End of Testimonials -->
+<div class="white-space-50"></div>      

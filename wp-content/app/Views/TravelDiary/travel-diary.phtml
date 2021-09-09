@@ -1,0 +1,21 @@
+<section data-id="traveldiary" class="animated-section">
+    <div class="page-title">
+        <h2>Travel Diary</h2>
+    </div>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <!-- Portfolio Content -->
+                <div class="portfolio-content">
+                    <?php
+                    $gallery = get_post_meta(get_the_ID(), 'gallery', true);
+                    if (!empty($gallery)) {
+                        echo do_shortcode('[PFG id=' . $gallery . ']');
+                    }
+                    ?> 
+                </div>
+                <!-- End of Portfolio Content -->
+            </div>
+        </div>
+    </div>
+</section>
