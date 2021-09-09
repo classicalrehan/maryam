@@ -53,7 +53,7 @@ if (!defined('ABSPATH')) {
                         foreach ($primaryNav as $key => $nav) {
                             ?>
                             <li class="<?php echo $key == 0 ? "active" : ""; ?>">
-                                <a href="/<?php echo $nav->url; ?>" class="nav-anim ">
+                                <a href="<?php echo site_url()."/".$nav->url; ?>" class="nav-anim ">
                                     <span class="menu-icon lnr <?php echo implode(" ", $nav->classes); ?>"></span>
                                     <span class="link-text"><?php echo $nav->post_title; ?></span>
                                 </a>
