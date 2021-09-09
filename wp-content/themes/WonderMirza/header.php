@@ -46,7 +46,6 @@ if (!defined('ABSPATH')) {
                             <h4><?php echo get_field('tagline', 'option'); ?></h4>
                         </div>
                     </div>
-
                     <ul class="main-menu">
                         <?php
                         $primaryNav = wp_get_nav_menu_items(2);
